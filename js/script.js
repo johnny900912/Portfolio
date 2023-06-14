@@ -26,7 +26,6 @@ const sr = ScrollReveal({
 sr.reveal('.home-text', { delay: 500, origin: 'left' })
 sr.reveal('.home-img', { delay: 350, origin: 'right' })
 
-sr.reveal('.about,.portfolio,.contact,.cta', { delay: 350, origin: 'bottom' })
 
 function showDescription(workId) {
     var workTitleElement = document.getElementById("workTitle");
