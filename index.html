@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <a href="" class="logo"><img src="img/logo.jpeg" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navlist">
+            <li><a href="#home">主頁</a></li>
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#portfolio">作品</a></li>
+            <li><a href="#contact">聯繫我</a></li>
+        </ul>
+        <!-- <a href="#" class="top-btn">你好</a> -->
+    </header>
+    <!---home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>哈囉，我是</h3>
+            <h1>劉肇紘</h1>
+            <h5>一個期待未知挑戰的人 <span>來自台灣</span></h5>
+            <p>我是一個來自台灣的前端網頁工程師<br>我對未知的東西充滿探索的慾望</p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100000291238180"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/johnny900912"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="#" class="btn">關於我</a>
+        </div>
+        <div class="home-img">
+            <img src="img/MyPhoto.jpg">
+        </div>
+    </section>
+    <!---subject-->
+    <section class="subject">
+        <div class="items">
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="/img/Target.svg">
+                </div>
+                <h3>目標</h3>
+                <p>有目標性的處理每一件席捲而來的任務</p>
+            </div>
+            <!---2--->
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="/img/Bulb.svg">
+                </div>
+                <h3>創新</h3>
+                <p>在團隊合作時總能提供一些特別的想法</p>
+            </div>
+            <!---3--->
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="/img/Brush.svg">
+                </div>
+                <h3>品質</h3>
+                <p>在任務中，自己的工作會維持一定量的品質</p>
+            </div>
+        </div>
+    </section>
+
+    <!---about me-->>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./img/MyPhoto.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <h3>我是一名就讀元智大學資訊傳播學系的大三學生</h3>
+            <h2>我喜歡研究前端網頁開發<br>以及遊戲程式設計</h2>
+            <p>哈囉，我叫劉肇紘，出生於2001年9月12日，是一個標準的處女座。我的待人處事隨和熱心，很符合我的性格。在團隊任務中，我很樂意充當聆聽者的角色，聽取各方意見，適時提出自己的論點，助力團隊創造出新的想法。在課餘時間，我會去圖書館、咖啡廳等地方，開啟筆電進入知識的世界。科技是會隨著時間更新的，唯有抱持好奇心，才能讓我獲得更多不同領域上的知識。
+            </p>
+            <a href="#" class="top-btn">聯繫我</a>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h3>作品集</h3>
+            <h2>我的作品集有以下</h2>
+            <p>以下是我一些作品有遊戲、網頁、影像創作等作品</p>
+        </div>
+        <div class="portfolio-content">
+            <!--1-->
+            <div class="col">
+                <img src="img/WebWork1.png" alt="">
+                <div class="layer">
+                    <h3 onclick="showDescription('work1')">嗑嗑報電影(網頁)</h3>
+                </div>
+                <div id="workDescription" class="box">
+                    <h2 id="workTitle"></h2>
+                    <h4 id="workReq"></h4>
+                    <h3 id="workCat"></h3>
+                    <p id="workPurpose"></p>
+                    <p id="workDescriptionText"></p>
+                    <span id="closeButton">X</span>
+                </div>
+            </div>
+            <!--2-->
+            <div class="col">
+                <img src="img//WebWork2.png" alt="">
+                <div class="layer">
+                    <h3 onclick="showDescription('work2')">Shabi(網頁)</h3>
+                </div>
+                <div id="workDescription" class="box">
+                    <h2 id="workTitle"></h2>
+                    <h4 id="workReq"></h4>
+                    <h3 id="workCat"></h3>
+                    <p id="workPurpose"></p>
+                    <p id="workDescriptionText"></p>
+                    <span id="closeButton">X</span>
+                </div>
+            </div>
+            <!--3-->
+            <div class="col">
+                <img src="img/Game1.png" alt="">
+                <div class="layer">
+                    <h3 onclick="showDescription('work3')">Rebirth(遊戲)</h3>
+                </div>
+                <div id="workDescription" class="box">
+                    <h2 id="workTitle"></h2>
+                    <h4 id="workReq"></h4>
+                    <h3 id="workCat"></h3>
+                    <p id="workPurpose"></p>
+                    <p id="workDescriptionText"></p>
+                    <span id="closeButton">X</span>
+                </div>
+            </div>
+            <!--4-->
+            <div class="col">
+                <img src="img/Game2.png" alt="">
+                <div class="layer">
+                    <h3 onclick="showDescription('work4')">Melting Ice(遊戲)</h3>
+                </div>
+                <div id="workDescription" class="box">
+                    <h2 id="workTitle"></h2>
+                    <h4 id="workReq"></h4>
+                    <h3 id="workCat"></h3>
+                    <p id="workPurpose"></p>
+                    <p id="workDescriptionText"></p>
+                    <span id="closeButton">X</span>
+                </div>
+            </div>
+            <!--5-->
+            <div class="col">
+                <img src="img/FantansyWorld.jpg" alt="">
+                <div class="layer">
+                    <h3 onclick="showDescription('work5')">奇幻世界(影像創作)</h3>
+                </div>
+                <div id="workDescription" class="box">
+                    <h2 id="workTitle"></h2>
+                    <h4 id="workReq"></h4>
+                    <h3 id="workCat"></h3>
+                    <p id="workPurpose"></p>
+                    <p id="workDescriptionText"></p>
+                    <span id="closeButton">X</span>
+                </div>
+            </div>
+            <!--6-->
+            <div class="col">
+                <img src="img/Cartoon.jpg" alt="">
+                <div class="layer">
+                    <h3 onclick="showDescription('work6')">卡通與大師的會面(影像創作)</h3>
+                </div>
+                <div id="workDescription" class="box">
+                    <h2 id="workTitle"></h2>
+                    <h4 id="workReq"></h4>
+                    <h3 id="workCat"></h3>
+                    <p id="workPurpose"></p>
+                    <p id="workDescriptionText"></p>
+                    <span id="closeButton">X</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="cta">
+        <div class="heading">
+            <h2>正在自學的部分</h2>
+        </div>
+
+        <div class="cta-box">
+            <div class="wrap-one">
+                <h3>網頁相關</h3>
+                <p>自學:Vue</p>
+                <img src="/img/Vue.png" alt="">
+            </div>
+
+            <div class="wrap-two">
+                <h3>遊戲相關</h3>
+                <p>自學:Unreal</p>
+                <img src="/img/Unreal.svg" alt="">
+            </div>
+
+            <div class="wrap-three">
+                <h3>影像相關</h3>
+                <p>自學:Blender</p>
+                <img src="/img/Blender.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="center">
+                <h3>這邊可以聯絡我喔</h3>
+                <p>可以寄信給我喔</p>
+            </div>
+            <div class="action">
+                <form>
+                    <input type="email" name="emai" placeholder="請輸入你的信箱" required>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="ends">
+        <p>這是我的網頁作品集@2023</p>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!----JS---->
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+
+</html>
